@@ -1,0 +1,51 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.4" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundleName": "mainJfram"
+	"i18n.keyPrefix": "ZhuBoUtil"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :::p, comp scrollPane2:::p:163:p}, seq l {space :p:10:p, par l {comp label2:::::x, seq {comp enter:::p:85:p, space s:::p, comp reset:::p:84:p, space :0:0:x}}}}, par l {seq {space :p:30:p, comp scrollPane1:::p:171:p}, seq {space :p:40:p, comp label3:::p:187:p}}, space :p:39:p}}"
+			"$verticalGroup": "par l {seq l {space :p:37:p, par b {comp label2::b:p:31:p, comp label3::b:p:31:p}, space :::p, par l {comp scrollPane1::::215:x, comp scrollPane2::::215:x}, space s:::p, par b {comp enter::b:p:25:p, comp reset::b:p:25:p}, space :p:16:p}}"
+		} ) {
+			name: "this"
+			"$locationPolicy": 1
+			"title": new FormMessage( null, "ZhuBoUtil.this.title" )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "reset"
+				"text": new FormMessage( null, "ZhuBoUtil.reset.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resetActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "enter"
+				"text": new FormMessage( null, "ZhuBoUtil.enter.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "enterActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "ZhuBoUtil.label2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "ZhuBoUtil.label3.text" )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "nearest"
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "streetFlow"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 465, 380 )
+		} )
+	}
+}
